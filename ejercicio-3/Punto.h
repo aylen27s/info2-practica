@@ -5,9 +5,10 @@ class Punto{
 
     public:
         Punto();
-        Punto( double x, double y);
+        Punto( double x, double y=0);
         ~Punto();
         void setPunto( double x, double y );
+        void setPunto( Punto p );
         Punto* getPunto();
         void setX(double x);
         void setY(double y);

@@ -27,6 +27,11 @@ void Punto::setPunto( double x, double y ){
     my = y; 
 }
 
+void setPunto( Punto p ){
+    mx = p.mx;
+    my = p.my
+}
+
 Punto* Punto::getPunto(){
     return this;
 }
