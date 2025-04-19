@@ -16,5 +16,5 @@ class Punto{
         double getX();
         double getY();
 
-        void operator=(Punto* p);
+        void operator=(Punto p);
 };

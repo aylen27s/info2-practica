@@ -59,7 +59,7 @@ double Punto::getY(){
     return my;
 }
 
-void Punto::operator=(Punto* p){
-    mx = p->mx;
-    my = p->my;
+void Punto::operator=(Punto p){
+    mx = p.getX();
+    my = p.getY();
 }
