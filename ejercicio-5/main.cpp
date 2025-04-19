@@ -21,7 +21,7 @@ int main(){
     cout <<"6. punto s+p: q= ("<<q.getX()<<";"<<q.getY()<<")"<<endl;
     q=r+47;
     cout <<"7. punto r+47: q= ("<<q.getX()<<";"<<q.getY()<<")"<<endl;
-    cout <<"Prueba de compilación con makefile"<<endl;
+    // cout <<"Prueba de compilación con makefile"<<endl;
 
 
     return 0;

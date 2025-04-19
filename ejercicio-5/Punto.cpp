@@ -59,10 +59,11 @@ double Punto::getY(){
     return my;
 }
 
-void Punto::operator=(Punto p){
-    mx = p.getX();
-    my = p.getY();
-}
+//No hace falta sobrecargar la asignación por la existencia del constructor de copia
+// void Punto::operator=(Punto p){
+//     mx = p.getX();
+//     my = p.getY();
+// }
 
 Punto Punto::operator+(Punto p){ // a=b+c --> a.setPunto(b.sumaPunto(c))
     double x_aux = mx + p.getX();
@@ -74,7 +75,7 @@ Punto Punto::operator+(Punto p){ // a=b+c --> a.setPunto(b.sumaPunto(c))
     return aux;
 }
 
-Punto Punto::operator-(Punto p){ // a=b+c --> a.setPunto(b.sumaPunto(c))
+Punto Punto::operator-(Punto p){ // a=b-c --> a.setPunto(b.restaPunto(c))
     double x_aux = mx - p.getX();
     double y_aux = my - p.getY();
 

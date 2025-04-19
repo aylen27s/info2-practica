@@ -5,7 +5,7 @@ class Punto{
 
     public:
         Punto();
-        Punto( double x, double y=0 );
+        Punto( double x, double y=0);
         Punto( Punto &p  );
         ~Punto();
         void setPunto( double x, double y );
@@ -16,7 +16,7 @@ class Punto{
         double getX();
         double getY();
 
-        void operator=(Punto p);
+        // void operator=(Punto p);
 
         Punto operator+(Punto p);
         Punto operator-(Punto p);
