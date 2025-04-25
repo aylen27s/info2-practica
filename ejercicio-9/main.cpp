@@ -21,7 +21,22 @@ int main(){
     r.setPunto(p); // acá si deberia aplicar el nuevo rango
     cout <<"9. setPunto r: "<<r<<endl;
     r.setLimites(500,-85);
-    cout <<"10. Rango de punto: "<<Punto::getLimiteInf()<< ":"<<Punto::getLimiteSup()<<endl;
+    cout <<"10. Rango de punto: "<<Punto::getLimiteInf()<< ":"<<Punto::getLimiteSup()<<endl<<endl;
+
+    Punto::setLimites(-1000, 1000);
+    cout <<"[Nuevo] Rango de punto: "<<p.getLimiteInf()<<":"<<p.getLimiteSup()<<endl;
+    Punto Pa(5000,-5000);
+    cout <<"Punto Pa(5000,-5000): "<<Pa<< endl;
+
+    Punto::setLimites(-50,50);
+    cout <<"[Nuevo] Rango de punto: "<<p.getLimiteInf()<<":"<<p.getLimiteSup()<<endl;
+    Punto Pb(5000,-5000);
+    cout <<"Punto Pb(5000,-5000): "<<Pb<< endl;
+    cout <<"Punto Pa: "<<Pa<< endl;
+
+    Pa = Pa + 100;
+    cout <<"Pa + 100 -> Punto Pa: "<<Pa<< endl;
+
 
     return 0;
 }
